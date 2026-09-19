@@ -1,0 +1,25 @@
+# Node / frontend
+node_modules/
+dist/
+.vite/
+*.local
+.env
+.env.local
+.env.*.local
+
+# .NET / backend
+backend/**/bin/
+backend/**/obj/
+backend/**/*.user
+# appsettings.Development.json ЕСТЬ в репозитории — секретов не хранит (только плейсхолдеры),
+# реальные значения (пароли/строки подключения) идут через `dotnet user-secrets`, см. plan/backend-dotnet/08-*.
+# Если всё же понадобится локальный оверрайд с реальными значениями — используйте этот паттерн:
+appsettings.*.local.json
+
+# IDE
+.idea/
+.vs/
+*.swp
+
+# OS
+.DS_Store
